@@ -39,8 +39,8 @@ func main() {
 		default:
 			day = 30
 		}
-
 		fmt.Printf("%d年%d月有%d天", year, month, day)
+
 	} else {
 		fmt.Println("月份输入错误")
 	}

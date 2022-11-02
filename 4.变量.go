@@ -61,6 +61,13 @@ func main() {
 	aa = 3
 	println(aa, bb)
 
-	cc := "woqu"
-	fmt.Printf("%T", cc)
+	cc := "woqu"  //go双引号就是字符串
+	ccc := "1234" //go双引号就是字符串
+	ewq := "男"    //go双引号就是字符串
+
+	cccc := 1234 //数字类型
+	ccccc := 'p' //奇葩
+
+	fmt.Printf("%T,%T,%T,%T,%T\n", cc, ccc, cccc, ccccc, ewq)
+	fmt.Println(ccccc)
 }

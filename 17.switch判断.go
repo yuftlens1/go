@@ -7,7 +7,7 @@ func main() {
 	fmt.Println("请输入你的美元数")
 	fmt.Scanf("%d", &dole)
 
-	switch { //如果需要判断大小就不能在这里写变量
+	switch { //如果需要判断大小就不能在这里写变量。因为这里写了变量dole case就只会匹配int类型，而比大小是布尔值！
 	case dole < 999:
 		fmt.Println("穷光蛋蛋")
 		fallthrough //加了这个后,命中这个case的话会执行这个case和下一个case
