@@ -10,6 +10,7 @@ func main() {
 	var p *int = &a    //*int指针
 	fmt.Println(p)     //输出内存地址
 	fmt.Println(*(&p)) //还是输出内存地址
+	fmt.Println(*p)    // * 根据内存地址取值,也只能跟内存地址
 
 	*p = 2 //修改同一片内存
 	fmt.Println(a, *p, *&a)
