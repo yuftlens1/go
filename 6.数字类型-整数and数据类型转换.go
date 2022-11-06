@@ -15,4 +15,8 @@ func main() {
 	var integer32 int32 = 32767
 	//fmt.Println(integer16 + integer32) //不同类型的数据它们不能直接做运算，需要做数据类型转换才能实现运算
 	fmt.Println(int32(integer16) + integer32) //数据类型转换，把int16转为int32
+
+	var test byte
+	test = 129
+	fmt.Println(test)
 }

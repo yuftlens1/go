@@ -66,7 +66,7 @@ func main() {
 	ewq := "男"    //go双引号就是字符串
 
 	cccc := 1234 //数字类型
-	ccccc := 'p' //奇葩
+	ccccc := '2' //奇葩  int32类型，获得值得unicode值
 
 	fmt.Printf("%T,%T,%T,%T,%T\n", cc, ccc, cccc, ccccc, ewq)
 	fmt.Println(ccccc)
