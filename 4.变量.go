@@ -70,4 +70,7 @@ func main() {
 
 	fmt.Printf("%T,%T,%T,%T,%T\n", cc, ccc, cccc, ccccc, ewq)
 	fmt.Println(ccccc)
+
+	var qaq int = 99
+	fmt.Println(qaq)
 }

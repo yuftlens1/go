@@ -23,9 +23,11 @@ func main() {
 		fmt.Println("string类型")
 	case bool:
 		fmt.Println("布尔类型")
+		fmt.Println(i)
 	case nil:
 		fmt.Printf("%T", i)
 	default:
 		fmt.Println("未匹配类型")
 	}
+
 }
