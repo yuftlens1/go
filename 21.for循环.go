@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os/exec"
+	"time"
 )
 
 func main() {
@@ -17,5 +18,6 @@ func main() {
 
 	for true { //   和 for {  的效果一样，死循环
 		exec.Command("notepad").Run()
+		time.Sleep(time.Second)
 	}
 }
