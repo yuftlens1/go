@@ -12,7 +12,7 @@ func main() {
 		ii++
 	}
 
-	mystr := "hello,中国"
+	mystr := "hello,中国" //字符型数据变量
 	for i, value := range mystr {
 		fmt.Printf("%d%c\n", i, value)
 	}
@@ -21,6 +21,7 @@ func main() {
 	str = "hello world"
 	fmt.Println(str[0:4]) //字符串切片, 4之前
 	fmt.Println(str[:4])  //和上面效果一样
+	fmt.Println(len(str))
 }
 
 /*
