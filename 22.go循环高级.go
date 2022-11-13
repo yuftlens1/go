@@ -21,7 +21,15 @@ func main() {
 	str = "hello world"
 	fmt.Println(str[0:4]) //字符串切片, 4之前
 	fmt.Println(str[:4])  //和上面效果一样
-	fmt.Println(len(str))
+	fmt.Println(len(str)) //len计算字符串长度//统计长度
+
+	sum := 0
+	for i := 0; i <= 10; i++ {
+		if i%3 == 0 {
+			sum += i //sum = sum +i    //相加   遇到整除3没有余数的 i数值！
+		}
+	}
+	fmt.Println(sum)
 }
 
 /*

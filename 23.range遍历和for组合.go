@@ -18,7 +18,7 @@ func main() {
 	}
 
 	for i := 0; i < len(mystr); i++ {
-		fmt.Printf("%c\n", mystr[i]) // mystr[i] // [] 应该是输出数据的内存下标.字符串/数据切片 。切片不能输出字符串不知道为啥，英文就可以
+		fmt.Printf("%c\n", mystr[i]) //mystr[i]字符串切片 // [] 应该是输出数据的内存下标.字符串/数据切片 。切片不能输出字符串不知道为啥，英文就可以
 	}
 	fmt.Println(mystr[0])
 
