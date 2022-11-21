@@ -17,16 +17,31 @@ func main() {
 	var zhengshu int32 = 0
 	var fushu int32 = 0
 	for {
-		var input int             //只是定义int类型的input变量
-		fmt.Scanf("%d\n", &input) //Scanf在win必须加\n!!!  Windows的默认换行符号是\r\n
+		/*
+			var input int             //只是定义int类型的input变量
+			fmt.Scanf("%d\n", &input) //Scanf在win必须加\n!!!  Windows的默认换行符号是\r\n
+			if input > 0 {
+				zhengshu++
+			} else if input < 0 {
+				fushu++
+			} else {
+				break
+			}
+			fmt.Println(zhengshu, fushu)
+		*/
+
+		fmt.Println(zhengshu, fushu) //要想把输出放上面就在每一个判断后加continue。捞到就拿上，不往下走！
+		var input int                //只是定义int类型的input变量
+		fmt.Scanf("%d\n", &input)    //Scanf在win必须加\n!!!  Windows的默认换行符号是\r\n
 		if input > 0 {
 			zhengshu++
+			continue
 		} else if input < 0 {
 			fushu++
+			continue
 		} else {
 			break
 		}
-		fmt.Println(zhengshu, fushu)
 	}
 }
 
