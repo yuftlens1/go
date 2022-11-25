@@ -1,15 +1,25 @@
 package main
 
+//goto:  执行指定的代码!!!
+
 import "fmt"
 
 func main() {
 	i := 0
 AK:
-	if i < 50 {
+	if i < 5 { //这本来不是循环，就是因为goto+AK成了循环    //如果 i < 5才执行下面的！
 		i++
 		fmt.Println(i)
 		goto AK
 	}
+
+	goto HAHA
+	fmt.Println("A")
+	fmt.Println("B")
+HAHA:
+	fmt.Println("C")
+	fmt.Println("D")
+	fmt.Println("E")
 }
 
 /*
