@@ -14,7 +14,7 @@ func main() {
 
 	mystr := "hello,中国" //字符型数据变量
 	for i, value := range mystr {
-		fmt.Printf("%d%c\n", i, value)
+		fmt.Printf("range  %d%c\n", i, value)
 	}
 
 	var str string
