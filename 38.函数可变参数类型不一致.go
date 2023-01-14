@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func shouDataType(list ...interface{}) {
-	for _, arg := range list {
+	for _, arg := range list { // _ 占位符，这里替换的是数组的位置序号!把值赋给 arg
 		switch arg.(type) {
 		case int:
 			fmt.Println("int类型")

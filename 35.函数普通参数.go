@@ -10,7 +10,7 @@ func add2(a, b, c, d int) (e int) {
 	return e
 }
 func add3(a, b, c, d int) (e int) {
-	a = 100 //函数里的变量替换了实参！上面已经定义了a是int的数据类型
+	a = 100 //函数里的变量替换了实参！上面已经定义了a是int的数据类型,函数内的变量值优先级较高
 	e = a + b + c + d
 	return
 }
