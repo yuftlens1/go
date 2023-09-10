@@ -33,10 +33,15 @@ func main2() {
 	fmt.Println(input)
 	exec.Command(input).Run() //执行命令
 }
-func main() {
+func main1() {
 	var _a int
 	fmt.Scanf("%x", &_a) //输入修改_a的值!!! //按照整数，修改_a这一片内存   //scanf输入的意思
 	//%x 以十六进制表示的整型值，上面的 %x 把输入的值定义为 16 进制的数值
 	fmt.Println(_a)                    //这是！输出默认！是十进制，把上面输入的16进制转为10进制输出
 	fmt.Printf("%x,数据类型是 ,%T", _a, _a) //输出也走16进制。          第一个 _a 是配合%x，第二个 _a 是配合 %T!!!
+}
+
+func main() {
+	fmtenv := fmt.Sprintf("拼接字符串1: %s，拼接字符串2: %s，拼接数字1: %d", "test1", "test2", "123")
+	fmt.Println("拼接内容是：", fmtenv)
 }
